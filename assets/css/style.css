@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: 'Roboto Mono', monospace;
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	font-family: 'Zen Kurenaido', sans-serif;*/
+	font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+::selection {
+	opacity: 0;
+	color: #78e644;
+}
+
+body {
+	background-color: #eee;
+}
+
+h1 {
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	font-size: 3em;
+	color: #222;
+}
+
+h1::after {
+	content: '';
+	display: flex;
+	width: 100%;
+	height: 2px;
+	background-color: #222;
+}
+
+p {
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+}
+
+i {
+	font-family: 'Roboto Mono', monospace;
+	color: #c453db;
+}
+
+strong {
+	font-family: 'Zen Kaku Gothic New', sans-serif;
+	color: #4ba6f4;
+}
+
+img {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 100%;
+	filter: brightness(93%);
+}
+
+.container {
+	position: absolute;
+	left: 10vw;
+	width: 80vw;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	width: 100%;
+}
+
+.card-image {
+	filter: brightness(95%);
+}
+
+.content-card {
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 10px;
+	width: 200px;
+	height: 300px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 100px #ddd;
+	transition: all 0.2s 0s ease-out;
+}
+
+.content-card::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -90%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	transform: skewX(-30deg);
+}
+
+/*.content-card::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 15%;
+	width: 5%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	transform: skewX(-30deg);
+}*/
+
+.content-card:hover {
+	margin-top: 0;
+	margin-bottom: 20px;
+	box-shadow: 0 0 100px #bbb;
+}
+
+.content-card p {
+	font-family: 'Roboto Mono', monospace;
+	margin: 5px;
+	font-size: 200%;
+}
+
+.content-card span {
+	font-family: 'Zen Maru Gothic', sans-serif;
+	font-weight: 500;
+	font-size: 120%;
+	margin: 5px;
+}
+
+.content-card img {
+	width: 80%;
+}
+
+.questions-container {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.question img {
+	margin: 0 0 10px 10px;
+}
+
+#basic-card {
+	
+}
+
+#tablecontent-area {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+#tablecontent-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 75vw;
+	height: 100vh;
+}
